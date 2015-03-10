@@ -2,4 +2,11 @@
 
 using namespace ShapeLibrary;
 
+ShapeFactory::ShapeFactory()
+{
 
+}
+ShapeFactory::~ShapeFactory()
+{
+
+}

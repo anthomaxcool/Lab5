@@ -11,3 +11,17 @@ Circle::~Circle()
 {
 
 }
+/*
+void Circle::setCenter(Point _point)
+{
+
+}
+void Circle::setRadius(unsigned int _radius)
+{
+
+}
+void Circle::draw()
+{
+
+}
+*/

@@ -3,9 +3,10 @@
 
 namespace ShapeLibrary
 {
-	class OpenPolyline
+	class OpenPolyline : public Shape
 	{
-
+		OpenPolyline();
+		~OpenPolyline();
 
 
 	};

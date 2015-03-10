@@ -3,7 +3,7 @@
 
 namespace ShapeLibrary
 {
-	class Rectangle
+	class Rectangle : public Shape
 	{
 	public:
 

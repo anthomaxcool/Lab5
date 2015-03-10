@@ -3,10 +3,11 @@
 
 namespace ShapeLibrary
 {
-	class Polygon
+	class Polygon : public ClosedPolyline
 	{
 	public:
-
+		Polygon();
+		~Polygon();
 
 	};
 }
