@@ -17,12 +17,13 @@ Point::Point( double _x, double _y ) :
 
 bool Point::operator == (const Point & point) const
 {
-	throw logic_error("Not Implmented yet");
+	if (x != point.x) return false;
+	if (y != point.y) return false;
 	return true;
 }
 
 bool Point::operator != (const Point & point) const
 {
-	throw logic_error("Not Implmented yet");
-	return false; 
+	if (x == point.x && y == point.y) return false;
+	return true; 
 }
