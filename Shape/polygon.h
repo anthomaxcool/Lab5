@@ -6,7 +6,7 @@ namespace ShapeLibrary
 	class Polygon : public ClosedPolyline
 	{
 	public:
-		Polygon();
+		Polygon(IWindowAPI &windowAPI);
 		~Polygon();
 
 		void draw();
