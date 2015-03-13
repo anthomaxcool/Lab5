@@ -10,3 +10,7 @@ ClosedPolyline::~ClosedPolyline()
 {
 
 }
+void ClosedPolyline::draw()
+{
+
+}

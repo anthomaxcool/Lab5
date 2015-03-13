@@ -2,9 +2,12 @@
 
 using namespace ShapeLibrary;
 
-Shape::Shape()
+Shape::Shape(IWindowAPI &windowAPI)
 {
+	this->windowAPI = &windowAPI;
 	point.clear();
+	setLineColor(Color::BLUE);
+	setFillColor(Color::INVISIBLE);
 }
 Shape::~Shape()
 {
@@ -12,19 +15,7 @@ Shape::~Shape()
 }
 void Shape::draw()
 {
-	//Draw v.2
-
-
-
-	//Draw v.1
-	if (getNumberOfPoints() >= 2)
-	{
-		for (unsigned int i = 0; i < getNumberOfPoints() - 1; i++)
-		{
-			windowAPI->setDrawingColor(lineColor);
-			windowAPI->drawLine(point.at(i), point.at(i + 1));
-		}
-	}
+	
 }
 void Shape::setLineColor(const Color _lineColor)
 {

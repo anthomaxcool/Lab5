@@ -9,5 +9,6 @@ namespace ShapeLibrary
 		Polygon();
 		~Polygon();
 
+		void draw();
 	};
 }

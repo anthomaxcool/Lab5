@@ -2,7 +2,7 @@
 
 using namespace ShapeLibrary;
 
-Circle::Circle(IWindowAPI &windowAPI)
+Circle::Circle(IWindowAPI &windowAPI) : Shape(windowAPI)
 {
 
 }
@@ -11,16 +11,16 @@ Circle::~Circle()
 {
 
 }
-//
-//void Circle::setCenter(Point _point)
-//{
-//
-//}
-//void Circle::setRadius(unsigned int _radius)
-//{
-//
-//}
-//void Circle::draw()
-//{
-//
-//}
+
+void Circle::setCenter(Point _point)
+{
+
+}
+void Circle::setRadius(unsigned int _radius)
+{
+
+}
+void Circle::draw()
+{
+
+}

@@ -2,11 +2,15 @@
 
 using namespace ShapeLibrary;
 
-OpenPolyline::OpenPolyline(IWindowAPI &windowAPI)
+OpenPolyline::OpenPolyline(IWindowAPI &windowAPI) : Shape(windowAPI)
 {
 
 }
 OpenPolyline::~OpenPolyline()
+{
+
+}
+void OpenPolyline::draw()
 {
 
 }

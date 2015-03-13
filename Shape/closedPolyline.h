@@ -9,7 +9,7 @@ namespace ShapeLibrary
 	public:
 		ClosedPolyline(IWindowAPI &windowAPI);
 		~ClosedPolyline();
-
-
+		
+		void draw();
 	};
 }

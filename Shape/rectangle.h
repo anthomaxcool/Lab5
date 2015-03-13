@@ -9,8 +9,12 @@ namespace ShapeLibrary
 		Rectangle(IWindowAPI &windowAPI);
 		~Rectangle();
 	
-		void setPosition(const Point point);
-		void setHeight(const unsigned int);
-		void setWidth(const unsigned int);
+		void setPosition(const Point _point);
+		void setHeight(const unsigned int _height);
+		void setWidth(const unsigned int _width);
+		void draw();
+	private:
+		unsigned int height;
+		unsigned int width;
 	};
 }

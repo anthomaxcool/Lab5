@@ -9,6 +9,6 @@ namespace ShapeLibrary
 		OpenPolyline(IWindowAPI &windowAPI);
 		~OpenPolyline();
 
-
+		void draw();
 	};
 }
