@@ -10,8 +10,8 @@ namespace ShapeLibrary
 		~Rectangle();
 	
 		void setPosition(const Point _point);
-		void setHeight(const unsigned int _height);
-		void setWidth(const unsigned int _width);
+		void setHeight(const int _height);
+		void setWidth(const int _width);
 		void draw();
 	private:
 		unsigned int height;

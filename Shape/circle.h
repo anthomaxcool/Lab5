@@ -14,6 +14,6 @@ namespace ShapeLibrary
 		void setRadius(unsigned int _radius);
 		void draw();
 	private:
-		Point point;
+		unsigned int radius;
 	};
 }
