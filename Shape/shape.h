@@ -14,10 +14,19 @@ namespace ShapeLibrary
 	public:
 		Shape();
 		~Shape();
+
+		void draw();
+		void setLineColor();
+		Color getLineColor();
+		void setFillColor();
+		Color getFillColor();
+		Point getPoint(unsigned int _index);
+		unsigned int getNumberOfPoints();
+		void add();
 	private:
-		Color color;
-		Point point;
-		ShapeFactory *shapeFactory = new ShapeFactory();
+		Color lineColor;
+		Color fillColor;
+		vector<Point> point;
 		IWindowAPI *windowAPI;
 	};
 }
