@@ -27,13 +27,13 @@ void Rectangle::setWidth(const int _width)
 void Rectangle::draw()
 {
 	if (point.empty()) throw runtime_error("Aucune position disponible");
-	for (unsigned int i = 0; i < getNumberOfPoints(); i++)
+	if (getNumberOfPoints() == 1)
 	{
 		this->windowAPI->setDrawingColor(getLineColor());
 		this->windowAPI->drawRectangle(point.at(0), height, width);
-	}
-	if (getFillColor().getColorAsInt() != Color::INVISIBLE)
-	{
-		this->windowAPI->fillRectangle(point.at(0), height, width);
+		if (getFillColor().getColorAsInt() != Color::INVISIBLE)
+		{
+			this->windowAPI->fillRectangle(point.at(0), height, width);
+		}
 	}
 }
