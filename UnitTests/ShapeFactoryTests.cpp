@@ -11,7 +11,7 @@ namespace UnitTests
 		FakeWindowAPI * fakeWindowAPI;
 		ShapeFactory * shapeFactory;
 
-		TEST_METHOD_INITIALIZE(ShapeFactoryTests_Initialize)
+		/*TEST_METHOD_INITIALIZE(ShapeFactoryTests_Initialize)
 		{
 			fakeWindowAPI = new FakeWindowAPI(640,480,"Super beau dessin");
 			shapeFactory  = new ShapeFactory(*fakeWindowAPI);
@@ -20,7 +20,7 @@ namespace UnitTests
 		{
 			delete fakeWindowAPI;
 			delete shapeFactory;
-		}
+		}*/
 		//
 		//TEST_METHOD(should_create_an_OpenPolyLine)
 		//{

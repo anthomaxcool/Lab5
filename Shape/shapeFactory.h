@@ -4,7 +4,7 @@
 
 namespace ShapeLibrary
 {
-	class	ShapeFactory
+	class ShapeFactory
 	{
 	public:
 		ShapeFactory();

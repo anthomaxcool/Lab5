@@ -5,7 +5,8 @@ namespace ShapeLibrary
 {
 	class OpenPolyline : public Shape
 	{
-		OpenPolyline();
+	public:
+		OpenPolyline(IWindowAPI &windowAPI);
 		~OpenPolyline();
 
 

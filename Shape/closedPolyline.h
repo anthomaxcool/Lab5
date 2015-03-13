@@ -7,7 +7,7 @@ namespace ShapeLibrary
 	class ClosedPolyline : public OpenPolyline
 	{
 	public:
-		ClosedPolyline();
+		ClosedPolyline(IWindowAPI &windowAPI);
 		~ClosedPolyline();
 
 

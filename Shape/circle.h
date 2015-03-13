@@ -9,11 +9,11 @@ namespace ShapeLibrary
 	public:
 		Circle(IWindowAPI &windowAPI);
 		~Circle();
-		/*
-		void setCenter(Point _point);
+		
+	/*	void setCenter(Point _point);
 		void setRadius(unsigned int _radius);
-		void draw();*/
+		void draw();
 	private:
-		//Point point;
+		Point point;*/
 	};
 }

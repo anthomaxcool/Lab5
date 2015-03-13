@@ -2,7 +2,7 @@
 
 using namespace ShapeLibrary;
 
-ClosedPolyline::ClosedPolyline()
+ClosedPolyline::ClosedPolyline(IWindowAPI &windowAPI) : OpenPolyline(windowAPI)
 {
 
 }
