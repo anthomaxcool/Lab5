@@ -11,7 +11,7 @@ namespace ShapeLibrary
 		~Circle();
 		
 		void setCenter(Point _point);
-		void setRadius(unsigned int _radius);
+		void setRadius(int _radius);
 		void draw();
 	private:
 		unsigned int radius;

@@ -8,20 +8,20 @@ namespace UnitTests
 	TEST_CLASS(PolygonTests)
 	{
 	public:
-		//FakeWindowAPI * fakeWindowAPI;
-		//Shape * polygon;
+		FakeWindowAPI * fakeWindowAPI;
+		Shape * polygon;
 
-		//TEST_METHOD_INITIALIZE(PolygonTests_Initialize)
-		//{
-		//	fakeWindowAPI = new FakeWindowAPI(640,480,"Super beau dessin");
-		//	polygon = new Polygon(*fakeWindowAPI);
-		//}
+		TEST_METHOD_INITIALIZE(PolygonTests_Initialize)
+		{
+			fakeWindowAPI = new FakeWindowAPI(640,480,"Super beau dessin");
+			polygon = new Polygon(*fakeWindowAPI);
+		}
 
-		//TEST_METHOD_CLEANUP(PolygonTests_CleanUp)
-		//{
-		//	delete fakeWindowAPI;
-		//	delete polygon;
-		//}
+		TEST_METHOD_CLEANUP(PolygonTests_CleanUp)
+		{
+			delete fakeWindowAPI;
+			delete polygon;
+		}
 
 		//TEST_METHOD(add_point_to_a_polygon_that_is_on_previous_line_should_throw_excpetion)
 		//{

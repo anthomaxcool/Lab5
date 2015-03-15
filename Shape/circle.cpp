@@ -16,22 +16,21 @@ void Circle::setCenter(Point _point)
 {
 	point.push_back(_point);
 }
-void Circle::setRadius(unsigned int _radius)
+void Circle::setRadius(int _radius)
 {
+	if (_radius < 0) throw invalid_argument("Nombre invalide (Négatif)");
 	radius = _radius;
 }
 void Circle::draw()
-{/*
+{
 	if (point.empty()) throw runtime_error("Aucune position disponible");
 	if (getNumberOfPoints() == 1)
 	{
 		this->windowAPI->setDrawingColor(getLineColor());
-		this->windowAPI->drawCircle(point.at(0), )
+		this->windowAPI->drawCircle(point.at(0), radius);
+		if (getFillColor().getColorAsInt() != Color::INVISIBLE)
+		{
+			this->windowAPI->fillCircle(point.at(0), radius);
+		}
 	}
-		this->windowAPI->drawRectangle(point.at(0), height, width);
-	
-	if (getFillColor().getColorAsInt() != Color::INVISIBLE)
-	{
-		this->windowAPI->fillRectangle(point.at(0), height, width);
-	}*/
 }
