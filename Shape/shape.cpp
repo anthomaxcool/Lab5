@@ -1,5 +1,5 @@
 #include "stdafx.h"
-
+#include <math.h>
 using namespace ShapeLibrary;
 
 Shape::Shape(IWindowAPI &windowAPI)

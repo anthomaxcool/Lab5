@@ -22,7 +22,7 @@ namespace ShapeLibrary
 		Color getFillColor();
 		Point getPoint(const unsigned int _index);
 		unsigned int getNumberOfPoints();
-		void add(const Point _point);
+		virtual void add(const Point _point);
 	protected:
 		IWindowAPI *windowAPI;
 		vector<Point> point;

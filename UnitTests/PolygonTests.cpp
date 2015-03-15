@@ -23,50 +23,50 @@ namespace UnitTests
 			delete polygon;
 		}
 
-		//TEST_METHOD(add_point_to_a_polygon_that_is_on_previous_line_should_throw_excpetion)
-		//{
-		//	//Arrange
-		//	polygon->add(Point(0, 0));
-		//	polygon->add(Point(50, 50));
+		TEST_METHOD(add_point_to_a_polygon_that_is_on_previous_line_should_throw_excpetion)
+		{
+			//Arrange
+			polygon->add(Point(0, 0));
+			polygon->add(Point(50, 50));
 
-		//	//Action
-		//	bool exceptionThrown = false;
-		//
-		//	try
-		//	{
-		//		polygon->add(Point(25, 25));
-		//	}
-		//	catch (runtime_error ex)
-		//	{
-		//		exceptionThrown = true;
-		//	}
+			//Action
+			bool exceptionThrown = false;
+		
+			try
+			{
+				polygon->add(Point(25, 25));
+			}
+			catch (runtime_error ex)
+			{
+				exceptionThrown = true;
+			}
 
-		//	//Assert
-		//	Assert::IsTrue(exceptionThrown);
-		//}
-		//
-		//TEST_METHOD(add_point_to_a_polygon_that_cross_preivous_lines_should_throw_excpetion)
-		//{
-		//	//Arrange
-		//	polygon->add(Point(25, 25));
-		//	polygon->add(Point(25, 75));
-		//	polygon->add(Point(75, 100));
+			//Assert
+			Assert::IsTrue(exceptionThrown);
+		}
+		
+		TEST_METHOD(add_point_to_a_polygon_that_cross_preivous_lines_should_throw_excpetion)
+		{
+			//Arrange
+			polygon->add(Point(25, 25));
+			polygon->add(Point(25, 75));
+			polygon->add(Point(75, 100));
 
-		//	//Action
-		//	bool exceptionThrown = false;
+			//Action
+			bool exceptionThrown = false;
 
-		//	try
-		//	{
-		//		polygon->add(Point(0, 50));
-		//	}
-		//	catch (runtime_error ex)
-		//	{
-		//		exceptionThrown = true;
-		//	}
+			try
+			{
+				polygon->add(Point(0, 50));
+			}
+			catch (runtime_error ex)
+			{
+				exceptionThrown = true;
+			}
 
-		//	//Assert
-		//	Assert::IsTrue(exceptionThrown);
-		//}
+			//Assert
+			Assert::IsTrue(exceptionThrown);
+		}
 
 		//TEST_METHOD(draw_Poloygon_should_draw_lines_on_windowAPI)
 		//{
