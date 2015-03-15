@@ -27,7 +27,18 @@ void Polygon::draw()
 }
 void Polygon::add(const Point _point)
 {
-
+	if (getNumberOfPoints() >= 2)
+	{
+		for (unsigned int i = 0; i < getNumberOfPoints() - 1; i++)
+		{
+			if (onSegment(point.at(i), point.at(i++), _point)) throw runtime_error("Point sur une ligne existante");
+		}
+		for (unsigned int i = 0; i < getNumberOfPoints() - 2; i++)
+		{
+			if (intersectLineSegment(point.at(i), point.at(i + 1), point.at(i + 2), _point)) throw runtime_error("Traverse une ligne existante");
+		}
+	}
+	point.push_back(_point);
 }
 bool Polygon::onSegment(const Point &p1, const Point &p2, const Point &pTest)
 {
@@ -55,7 +66,7 @@ bool Polygon::intersectLineSegment(const Point &p1, const Point &p2, const Point
 	if (y < min(y1, y2) || y > max(y1, y2) ||
 		y < min(y3, y4) || y > max(y3, y4)) return false;
 
-	//
+	
 	if ((x == p1.x || x == p2.x || x == p3.x || x == p4.x) && (y == p1.y || y == p2.y || y == p3.y || y == p4.y)) return false;
 
 	return true;
