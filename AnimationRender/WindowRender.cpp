@@ -3,7 +3,7 @@
 using namespace WindowRender;
 using namespace ShapeLibrary;
 
-WindowsRender::WindowsRender()
+WindowsRender::WindowsRender(IWindowAPI &windowAPI)
 {
 
 }

@@ -9,7 +9,7 @@ namespace WindowRender
 	class WindowsRender
 	{
 	public:
-		WindowsRender();
+		WindowsRender(IWindowAPI &windowAPI);
 		~WindowsRender();
 
 		void attach(Shape & _shape);
